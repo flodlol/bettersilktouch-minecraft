@@ -2,7 +2,6 @@
 
 A small Fabric client mod for Minecraft `1.21.x` that prevents breaking selected blocks unless the held tool has Silk Touch.
 
-Author: `flodlol`
 
 ## What it does
 
