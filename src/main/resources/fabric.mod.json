@@ -7,14 +7,20 @@
   "authors": [
     "flodlol"
   ],
-  "license": "All Rights Reserved",
+  "contact": {
+    "homepage": "https://github.com/flodlol/bettersilktouch-minecraft",
+    "sources": "https://github.com/flodlol/bettersilktouch-minecraft",
+    "issues": "https://github.com/flodlol/bettersilktouch-minecraft/issues"
+  },
+  "license": "GPL-2.0",
+  "icon": "icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
-      "dev.jonas.bettersilktouch.client.BetterSilkTouchClient"
+      "dev.flodlol.bettersilktouch.client.BetterSilkTouchClient"
     ],
     "modmenu": [
-      "dev.jonas.bettersilktouch.client.ModMenuCompat"
+      "dev.flodlol.bettersilktouch.client.ModMenuCompat"
     ]
   },
   "depends": {

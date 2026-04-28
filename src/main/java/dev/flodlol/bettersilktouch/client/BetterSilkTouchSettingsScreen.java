@@ -1,4 +1,4 @@
-package dev.jonas.bettersilktouch.client;
+package dev.flodlol.bettersilktouch.client;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.gui.DrawContext;
@@ -116,7 +116,7 @@ public final class BetterSilkTouchSettingsScreen extends Screen {
         clearChildren();
 
         int centerX = this.width / 2;
-        blockInput = new TextFieldWidget(textRenderer, centerX - 205, 40, 310, 20, Text.literal("Search blocks"));
+        blockInput = new TextFieldWidget(textRenderer, listX(), 40, LIST_WIDTH, 20, Text.literal("Search blocks"));
         blockInput.setMaxLength(128);
         blockInput.setText(searchQuery);
         blockInput.setChangedListener(value -> {
@@ -210,7 +210,7 @@ public final class BetterSilkTouchSettingsScreen extends Screen {
         super.render(context, mouseX, mouseY, deltaTicks);
 
         int centerX = this.width / 2;
-        context.drawCenteredTextWithShadow(textRenderer, this.title, centerX, 16, 0xFFFFFF);
+        context.drawCenteredTextWithShadow(textRenderer, Text.literal("Better Silk Touch"), centerX, 16, 0xFFFFFFFF);
         context.drawTextWithShadow(textRenderer, Text.literal("Protected blocks"), listX(), 78, 0xFFFFFF);
         context.drawTextWithShadow(textRenderer, Text.literal("Click a row to toggle protection"), listX() + 116, 78, 0xA8A8A8);
 

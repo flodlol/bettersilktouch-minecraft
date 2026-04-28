@@ -1,4 +1,4 @@
-package dev.jonas.bettersilktouch.client;
+package dev.flodlol.bettersilktouch.client;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;

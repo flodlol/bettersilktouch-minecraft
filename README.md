@@ -4,6 +4,8 @@ A small Fabric client mod for Minecraft `1.21.x` that prevents breaking selected
 
 Author: `flodlol`
 
+![Better Silk Touch preview](src/main/resources/preview.gif)
+
 ## What it does
 
 - Lets the player maintain a protected block list in a Mod Menu settings screen

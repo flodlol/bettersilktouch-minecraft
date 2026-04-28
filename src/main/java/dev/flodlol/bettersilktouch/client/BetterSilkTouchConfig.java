@@ -1,4 +1,4 @@
-package dev.jonas.bettersilktouch.client;
+package dev.flodlol.bettersilktouch.client;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

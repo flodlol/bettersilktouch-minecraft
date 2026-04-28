@@ -1,4 +1,4 @@
-package dev.jonas.bettersilktouch.client;
+package dev.flodlol.bettersilktouch.client;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
@@ -15,7 +15,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.GameMode;
 
@@ -81,17 +80,15 @@ public final class BetterSilkTouchClient implements ClientModInitializer {
             int screenWidth = client.getWindow().getScaledWidth();
             int screenHeight = client.getWindow().getScaledHeight();
             int textWidth = client.textRenderer.getWidth(warningText);
-            int x = screenWidth / 2;
+            int x = (screenWidth - textWidth) / 2;
             int y = screenHeight - 86;
 
-            drawContext.fill(x - (textWidth / 2) - 4, y - 2, x + (textWidth / 2) + 4, y + 10, 0x66000000);
-
-            drawContext.drawCenteredTextWithShadow(
+            drawContext.drawTextWithShadow(
                 client.textRenderer,
                 warningText,
                 x,
                 y,
-                0xFF5555
+                0xFFFF5555
             );
         });
     }
