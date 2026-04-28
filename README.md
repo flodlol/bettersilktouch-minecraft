@@ -55,4 +55,4 @@ This repository is set up to be pushed directly to GitHub:
 - source jar enabled
 - build verified locally
 
-Before a public release, update the contact links and license if needed.
+Before a public release, update the contact links if needed.
