@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "bettersilktouch",
+  "version": "${version}",
+  "name": "Better Silk Touch",
+  "description": "Stops you from breaking configured blocks unless your tool has Silk Touch.",
+  "authors": [
+    "flodlol"
+  ],
+  "license": "All Rights Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.jonas.bettersilktouch.client.BetterSilkTouchClient"
+    ],
+    "modmenu": [
+      "dev.jonas.bettersilktouch.client.ModMenuCompat"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version_range}"
+  }
+}
